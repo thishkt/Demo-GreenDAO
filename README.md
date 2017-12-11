@@ -1,2 +1,2 @@
 # demogreendao
-GreenDAO 官方範例
+GreenDAO 範例
