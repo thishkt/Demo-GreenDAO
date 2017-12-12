@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">DemoGreenDao</string>
-    <string name="enter_new_note">Enter new note</string>
-    <string name="add">Add</string>
-    <string name="click_to_remove">Click a note to remove it</string>
 </resources>

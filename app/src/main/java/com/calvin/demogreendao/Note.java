@@ -1,18 +1,14 @@
 package com.calvin.demogreendao;
 
-import org.greenrobot.greendao.annotation.Convert;
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.Index;
 import org.greenrobot.greendao.annotation.NotNull;
+import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * Entity mapped to table "NOTE".
  */
-@Entity(indexes = {
-    @Index(value = "text, date DESC", unique = true)
-})
+@Entity
 public class Note {
 
     @Id
@@ -20,20 +16,11 @@ public class Note {
 
     @NotNull
     private String text;
-    private String comment;
-    private java.util.Date date;
 
-    @Convert(converter = NoteTypeConverter.class, columnType = String.class)
-    private NoteType type;
-
-    @Generated(hash = 1686394253)
-    public Note(Long id, @NotNull String text, String comment, java.util.Date date,
-            NoteType type) {
+    @Generated(hash = 990389247)
+    public Note(Long id, @NotNull String text) {
         this.id = id;
         this.text = text;
-        this.comment = comment;
-        this.date = date;
-        this.type = type;
     }
 
     @Generated(hash = 1272611929)
@@ -55,31 +42,5 @@ public class Note {
     public void setText(String text) {
         this.text = text;
     }
-
-    public String getComment() {
-        return this.comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
-
-    public java.util.Date getDate() {
-        return this.date;
-    }
-
-    public void setDate(java.util.Date date) {
-        this.date = date;
-    }
-
-    public NoteType getType() {
-        return this.type;
-    }
-
-    public void setType(NoteType type) {
-        this.type = type;
-    }
-
-    
 
 }
