@@ -1,30 +1,34 @@
 GreenDAO ORM 基本範例
 ===
+
+
 HKT 線上教室 每週六日 更新影片
 
-▶ YouTube 頻道
+▶ YouTube 頻道:
 https://goo.gl/3f2pJi
 
-▶ KT 線上教室 臉書粉絲團
+▶ KT 線上教室 臉書粉絲團:
 https://goo.gl/27H9Li
 
-▶ 贊助我們
+▶ 贊助我們:
 https://goo.gl/FiKXAu
 
-▶2017 Android 中文開放式課程 目錄
+▶2017 Android 中文開放式課程目錄:
 https://goo.gl/Ti8mGA
 
 Android 8 Oreo / Android Studio 
 Android 教學 / 開發
 
+---
 
-GreenDAO 基本讀取、新增、修改、刪除範例說明：
+## GreenDAO 基本讀取、新增、修改、刪除範例說明：
 
 ![](https://i.imgur.com/i0HVPkC.png)
 
 ## 點擊「讀取」按鈕功能
 可以在 Logcat 看到，撈取 Note 資料表資料。
 ![](https://i.imgur.com/h2s27k2.png)
+
 (預設Note 資料表為空)
 
 ## 點擊「新增」按鈕功能
@@ -154,3 +158,4 @@ getNoteDao().deleteAll();
 ---
 參考資料：
 [greenDAO 官方說明文件](http://greenrobot.org/greendao/)
+
